@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #ffff;
+}
+
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav{
+    width: 90%;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    margin: 0 auto;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+#main{
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+#nav-brand{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto 0px;
+    padding: 0;
+    height: 100%;
+}
+
+li{
+    margin: auto 20px;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+}
+
+ul li a:hover{
+    font-size: large;
+    color: rgb(233, 233, 233);
+}
+
+#nav-button{
+    display: flex;
+    justify-content: end;
+}
+
+a{
+    text-decoration: none;
+    /* font-size: medium; */
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+a:hover{
+    color: rgb(238, 238, 238);
+}
+
+.btn{
+    border-radius: 5px;
+    height: 40px;
+    margin: auto 10px;
+    border: none;
+}
+
+.btn-purple{
+    background-color: rgb(165, 85, 165);
+    transition: 0.5s;
+}
+
+.btn-purple:hover{
+    background-color: rgb(169, 31, 169);
+}
+
+/* .row{
+    position: relative;
+} */
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width:25% ;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-6{
+    width: 50%;
+}
+.col-12{
+    width: 100%;
+}
+
+#toggle{
+    display: none;
+}
+
+@media  (max-width:991px) {
+    nav{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #main{
+        /* height: 3rem; */
+        display: block;
+        /* overflow: hidden; */
+        transition: 0.5s;
+        /* padding-bottom: 0px; */
+    }
+
+
+    li{
+        display: block;
+        margin: 30px 20px;
+    }
+    ul{
+        display: block;
+    }
+    #nav-button {
+            display: flex;
+            justify-content: start;
+    }
+
+    .col-sm-12{
+        width: 100%;
+    }
+
+    .collapse{
+        height: 80px;
+        overflow: hidden;
+    }
+    .expand{
+        height: 80%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #toggle{
+        margin: auto 20px;
+        display: inline;
+    }
+}
+
+@media (max-width:700px) {
+    .expand{
+        height:100%;
+    }
+    #page1-card img{
+        width: 100%;
+        height: auto;
+        margin-top: 9vh;
+    }
+}
+
+#page1-card{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#page1-card img{
+    width: 100%;
+    height: auto;
+    
+}
+
+#banner-text{
+    text-align: center;
+    position: absolute;
+    color: aliceblue;
+}
+
+#banner-text h1{
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+#banner-text span{
+    -webkit-text-stroke: 4px rgb(165, 85, 165);
+    color: transparent;
+}
+
+
+#banner-text p{
+    text-align: center;
+    margin: auto;
+    font-size: 1.7vw;
+    width: 40%;
+}
+
+#scroll-text{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-text::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-text p{
+    font-size: 120px;
+    font-weight: 750;
+    -webkit-text-stroke: 2px rgb(165, 85, 165);
+    color: transparent;
+    display: inline;
+    flex-wrap: nowrap;
+}
+
+/* .slcontainer{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 95%;
+}
+
+.sl-wrapper .img-list{
+    display: grid;
+    gap: 18px;
+    overflow-x: auto;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.sl-wrapper .img-list .image-items{
+    height: 400px;
+    width: 280px;
+    object-fit: cover;
+} */
+
+.container-sec2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.sec2-img{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    padding-left: 5%;
+    padding: 5%;
+}
+
+
+
+.sec2-text h1{
+    font-size: 6vw;
+    color:rgb(165, 85, 165) ;
+}
+
+.sec2-text p{
+    font-size: 1.7vw;
+    width: 95%;
+}
+
+@media (max-width:900px) {
+    .container-sec2{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .sec2-text{
+        padding: 5%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec2-text h1{
+        font-size: 9vh;
+    }
+
+    .sec2-text p{
+        font-size: 4vw;
+        width: auto;
+    }
+
+}
+
+.sec4-head h1{
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(165, 85, 165);
+}
+
+.container-sec4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.container-sec4 .card{
+    border-radius: 10px;
+    height: 380px;
+    width: 380px;
+    margin-top: 10px;
+    background-color: rgb(165, 85, 165);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hovertext{
+    background-color: rgb(165, 85, 165);
+    opacity: 0;
+    transition: all ease 0.7s;
+    padding: 5%;
+    text-align: center;
+}
+.hovertext h3{
+    font-size: 35px;
+}
+
+.hovertext:hover{
+    opacity: 1;
+    transition: all ease 0.7s;
+    padding: 10%;
+}
+
+.card p{
+    font-size: 30px;
+    text-align: center;
+    padding: 5%;
+}
+
+.container-sec4 #card1{
+    background-image: url(img/zeb2.png);
+}
+
+.container-sec4 #card2{
+    background-image: url(img/zeb2.png);
+}
+
+.container-sec4 #card3{
+    background-image: url(img/zeb2.png);
+}
+
+.container-sec4 .tmcard{
+    border-radius: 10px;
+    height: 380px;
+    width: 280px;
+    margin-top: 10px;
+    background-color: rgb(165, 85, 165);
+    background-size: cover;
+    overflow: hidden;
+}
+
+footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgb(165, 85, 165),rgb(0, 0, 0));
+    /* background-image: url(img/footer.png); */
+    position: relative;
+    align-items: center;
+    display: flex;
+    margin-top: 4rem;
+    gap: 150px;
+    justify-content: space-around;
+}
