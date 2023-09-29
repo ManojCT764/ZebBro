@@ -366,15 +366,19 @@ a:hover{
 }
 
 .container-sec4 #card1{
-    background-image: url(img/zeb2.png);
+    background-image: url(img/zeb3.png);
 }
 
 .container-sec4 #card2{
-    background-image: url(img/zeb2.png);
+    background-image: url(img/zeb4.png);
 }
 
 .container-sec4 #card3{
-    background-image: url(img/zeb2.png);
+    background-image: url(img/zeb5.png);
+}
+
+.container-sec4 #card4{
+    background-image: url(img/zeb1.png);
 }
 
 .container-sec4 .tmcard{
