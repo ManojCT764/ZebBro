@@ -381,6 +381,10 @@ a:hover{
     background-image: url(img/zeb1.png);
 }
 
+.tm-card-bind{
+    text-align: center;
+}
+
 .container-sec4 .tmcard{
     border-radius: 10px;
     height: 380px;
